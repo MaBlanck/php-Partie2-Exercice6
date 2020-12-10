@@ -1,8 +1,6 @@
 <?php
-$gender = 40;
+$gender = 17;
 ?>
-
-
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 <head>
@@ -10,18 +8,14 @@ $gender = 40;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercice 6 Partie 2</title>
 </head>
+
 <body>
     <h1>Exercice 6 partie 2</h1>
-
-    <p><?php
-    if($gender >= 18)
-    {
-        echo 'Tu es majeur';
-    }
-    else 
-    {
-        echo 'Tu n\'es pas majeur';
-    }
-    ?></p>
+    <?php if ($gender >= 18) : ?>
+        <?= 'Tu es majeur'; ?>
+    <?php else : ?>
+        <p><?= 'Tu n\'es pas majeur'; ?></p>
+    <?php endif ?>
+</p>
 </body>
 </html>
